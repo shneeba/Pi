@@ -260,7 +260,7 @@ The guys at PiVPN have made it extremely easy to setup a VPN server on your Pi. 
 
 We need to make a few changes so that traffic is directed to the pihole
 
-1) vi 
+1) `vi /etc/openvpn/server.conf`
 2) Make sure the `push "dhcp-option` setting is configured to point to the pihole, it should look like so:
 
 `push "dhcp-option DNS 192.168.0.250"`
