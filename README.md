@@ -68,7 +68,7 @@ static routers=192.168.0.1
 static domain_name_servers=192.168.0.1 8.8.8.8 fd51:42f8:caae:d92e::1
 ```
 
-If you're really stuck and can't edit this file, make a backup and create a new file with the following exact contents (make sure you're not in vi `q!`):
+If you're really stuck and can't edit this file, make a backup and create a new file with the following exact contents (make sure you're not in vi `:q!`):
 
 `mv /etc/dhcpcd.conf /etc/dhcpcd.conf.backup`
 
