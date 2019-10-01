@@ -40,11 +40,11 @@ tobias  ALL=(ALL) NOPASSWD: ALL
 
 If you can't work out how to use VI, do the exactly the following (when in VI):
 
-`/ALL`
-Press the END key
-`a`
-Copy and paste the line here
-`:wq!`
+1) `/ALL`
+2) Press the END key
+3) `a`
+4) Copy and paste the line here
+5) `:wq!`
 
 5) Start the SSH service and enable it on boot:
 
