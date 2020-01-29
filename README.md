@@ -21,19 +21,19 @@ Download Raspbian (choose whether you want desktop or just CLI, I use the CLI):
 2) If using a desktop version, find how to start the terminal as this will be where you do all your install / config.
 3) Add your own user and give them sudo permissions, run these commands, as is (changing names):
 
-`adduser tobias`
+`adduser exampleuser`
 
-`usermod -aG sudo tobias`
+`usermod -aG sudo exampleuser`
 
 `vi /etc/sudoers`
 
 Check out some VI commands here if you need some help - https://kb.iu.edu/d/afdc
 
-4) Paste `tobias  ALL=(ALL) NOPASSWD: ALL` (changing the username to the one you just created) into your /etc/sudoers file so that you can sudo around without a password, it should looks like so:
+4) Paste `exampleuser ALL=(ALL) NOPASSWD: ALL` (changing the username to the one you just created) into your /etc/sudoers file so that you can sudo around without a password, it should looks like so:
 
 ```# User privilege specification
 root    ALL=(ALL:ALL) ALL
-tobias  ALL=(ALL) NOPASSWD: ALL
+exampleuser  ALL=(ALL) NOPASSWD: ALL
 # Allow members of group sudo to execute any command
 %sudo   ALL=(ALL:ALL) ALL
 ```
@@ -294,9 +294,9 @@ Once PiVPN has been installed you get a nice utility to add and remove users. We
 
 ```
 ========================================================
-Done! tobiasv2.ovpn successfully created!
-tobiasv2.ovpn was copied to:
-  /home/tobias/ovpns
+Done! exampleuserv2.ovpn successfully created!
+exampleuserv2.ovpn was copied to:
+  /home/exampleuser/ovpns
 for easy transfer. Please use this profile only on one
 device and create additional profiles for other devices.
 ========================================================
@@ -306,7 +306,7 @@ You need to get this off your pi and onto your phone. I used WinSCP - https://wi
 
 1) Open WinSCP
     1) Hostname (IP of Pi) - 192.168.0.250
-    2) User (The user we first created) - tobias
+    2) User (The user we first created) - exampleuser
     3) Password - The password for this user
 2) You will now be in the home directory, if this isn't where the ovpn profile was put you can navigate to where it previously told you.
 3) Upload to google drive or copy over to your phone
